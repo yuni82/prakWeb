@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+    <title>Siska UBG</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Siska UBG</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="daftarMahasiswa.html">Daftar Mahasiswa</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="petikanNilai.html">Petikan Nilai</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="tambahMahasiswa.html">Tambah Mahasiswa</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+    <div class="container">
+        <div class="jumbotron">
+          <h1 class="display-40">SISKA UBG</h1>
+          <p class="lead">Selamat datang di situs ubg</p>
+        </div>
+        <div class="row">
+        <div class="col-sm-4">
+        <div class="card">  
+                <img src="makan.png" class="card-image">
+                <h5 class="card-title">makan cuy</h5>
+                <p class="card-text">
+                    makan cuy
+                </p>
+        </div>
+        </div>
+        <div class="col-sm-4">
+        <div class="card">
+          <img src="makan.png" class="card-image">
+          <h2 class="card-title">makan cuy</h2>
+          <p class="card-text">
+              makan cuy
+          </p>
+        </div>
+        </div>
+        <div class="col-sm-4">
+        <div class="card">
+          <img src="makan.png" class="card-image">
+          <h2 class="card-title">makan cuy</h2>
+          <p class="card-text">
+              makan cuy
+              <button id="read">read more</button>
+              <button id="unread">unread</button>
+              <p id="open" hidden>Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. 
+                Maiores, commodi tenetur maxime 
+                adipisci eligendi laborum explicabo harum iure, 
+                quam aperiam rem nobis et velit, qui 
+                consequatur corporis nihil illo quasi!</p>
+          </p>
+        </div>
+        </div>
+    </div>
+    <p id="biodata"></p>
+    <p id="umur"></p>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src=""></script>
+    <script type="text/javascript">
+        var nama = "makan";
+        var age = 17;
+        document.getElementById("biodata").innerHTML=nama;
+        document.getElementById("umur").innerHTML=age;
+        $(document).ready(function(){
+          $('#read').click(function(){
+            $('#open').prop('hidden', false);
+            $('#unread').prop('hidden', false);
+            $('#read').prop('hidden', true);
+          })
+          $('#unread').click(function(){
+            $('#open').prop('hidden', true);
+            $('#unread').prop('hidden', false);
+            $('#read').prop('hidden', true);
+          })
+        })
+    </script>
+    <div>
+      <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
+    </div>
+</body>
+</html>
